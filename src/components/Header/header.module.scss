@@ -1,0 +1,31 @@
+@use "variables" as v;
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-roboto);
+    background: v.$primary-color;
+    color:v.$white;
+    padding: 0 2rem;
+}
+
+.navigation {
+
+    ul {
+           display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style: none; 
+    }
+
+}
+
+.search {
+    min-width: 30rem;
+    margin-block: 1rem;
+    border-radius: 1rem;
+    border: 0;
+    padding-left: 1rem;
+    outline: none;
+}

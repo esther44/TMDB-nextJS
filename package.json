@@ -9,12 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "next": "14.2.3",
     "react": "^18",
+    "react-debounce-input": "^3.3.0",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "14.2.3",
+    "sass": "^1.77.4"
   }
 }
