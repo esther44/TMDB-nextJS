@@ -11,5 +11,5 @@ export async function GET(request) {
 		},
 	]);
 
-	return new Response(JSON.stringify(searchResults, { status: 200 }));
+	return new Response(JSON.stringify(searchResults), { status: 200 });
 }

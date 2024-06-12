@@ -1,12 +1,12 @@
 .container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     gap: 2rem;
-    flex-flow: row wrap;
     padding: 0;
 
     > li {
         flex: 1;
+        max-width: 20rem;
         list-style: none;
     }
 }

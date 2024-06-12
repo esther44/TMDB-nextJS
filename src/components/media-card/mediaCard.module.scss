@@ -4,7 +4,6 @@
     font-family: var(--font-montserrat);
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
-    min-width: 20rem;
 }
 
 .image{
@@ -45,5 +44,17 @@
     p{
         font-size: 1.1rem;
         font-weight: 300;
+    }
+
+    ul{
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    li{
+        list-style: none;
     }
 }

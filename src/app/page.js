@@ -1,12 +1,13 @@
 import Popular from "@/components/popular/Popular";
-import MediaCard from "@/components/media-card/mediaCard";
-import styles from "./Home.module.scss";
+import styles from "@/styles/page.module.scss";
+import Genres from "@/components/Genres/Genres";
 
 export default function Home() {
 	return (
 		<>
 			<div className={styles.main}>
 				<Popular></Popular>
+				<Genres></Genres>
 			</div>
 		</>
 	);

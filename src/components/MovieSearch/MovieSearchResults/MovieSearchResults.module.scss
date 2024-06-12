@@ -1,0 +1,35 @@
+@use "../../../styles/variables" as v;
+
+.searchResults {
+    position: absolute;
+    z-index: 2;
+    background: v.$white;
+    top: 100%;
+    padding: 1rem;
+    box-shadow: 0px 2px 8px rgba(0,0,0,.15);
+    font-family: var(--font-monserrat);
+
+    > div > a{
+        display: flex;
+        align-items: center;
+        padding-block: 1rem;
+        border-bottom: 1 px solid rgba(0,0,0,.15);
+
+        &:hover{
+            p {
+            color: v.$secondary-color;
+        }
+        }
+
+        img{
+    box-shadow: 0px 2px 8px rgba(0,0,0,.15);
+        }
+
+        p{
+            margin-left: 1rem;
+            color: v.$black;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+    } 
+}

@@ -1,0 +1,21 @@
+@use "./../../styles/variables" as v;
+
+.container{
+display: flex;
+flex-wrap: wrap;
+gap:2rem;
+padding: 0;
+
+    .genre{
+padding-block: 1rem;
+background: v.$primary-color;
+color: v.$white;
+font-weight: 700;
+flex: 0 0 calc(20% - 2rem);
+text-align: center;
+
+p{
+    margin: 0;
+}
+    }
+}
