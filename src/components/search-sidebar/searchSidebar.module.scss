@@ -1,0 +1,12 @@
+@use "../../styles/variables" as v;
+
+
+.sidebar{
+    margin-top: 2rem;
+    h1{
+font-size: 2.4rem;
+color: v.$secondary-color;
+font-weight: 700;
+margin-bottom: 2.5rem;
+    }
+}
