@@ -1,0 +1,78 @@
+@use "./../../styles/variables" as v;
+.details {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  .background {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      object-fit: cover;
+    }
+    &::after {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #041226, $alpha: .8);
+      content: "";
+    }
+  }
+  .content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5rem 0;
+    span {
+      color: v.$grey-color;
+    }
+    .description {
+      display: flex;
+      flex-direction: column;
+      flex: .6;
+      color: v.$white;
+      font-family: var(--font-montserrat);
+      h1 {
+        font-weight: 700;
+        font-size: 2.6rem;
+        margin: 0;
+        span {
+          font-size: 2rem;
+        }
+      }
+
+      .production {
+        font-size: 1.3rem;
+      }
+
+      h2 {
+        color: v.$white;
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 1rem 0 0;
+      }
+
+      .overview {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        font-weight: 300;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .credits {
+        margin-top: auto;
+      }
+    }
+  }
+}

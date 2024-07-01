@@ -1,0 +1,15 @@
+.similar {
+  display: flex;
+  justify-content: center;
+
+  .list {
+      display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 2rem;
+
+  > div {
+     flex: 0 0 20rem;
+  }
+  }
+}
