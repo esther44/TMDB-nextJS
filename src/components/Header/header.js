@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import Link from "next/link";
 import MovieSearch from "../MovieSearch/MovieSearch";
+import LanguageSelector from "../language-selector/LanguageSelector";
 
 const Header = () => {
 	return (
@@ -22,8 +23,11 @@ const Header = () => {
 					</li>
 				</ul>
 			</nav>
-			<MovieSearch></MovieSearch>
-			<FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+			<div className={styles.right}>
+				<MovieSearch></MovieSearch>
+				<FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+				<LanguageSelector></LanguageSelector>
+			</div>
 		</header>
 	);
 };
