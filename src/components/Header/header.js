@@ -5,27 +5,32 @@ import Link from "next/link";
 import MovieSearch from "../MovieSearch/MovieSearch";
 import LanguageSelector from "../language-selector/LanguageSelector";
 
-const Header = () => {
+const Header = ({ locale }) => {
 	return (
 		<header className={styles.header}>
 			<div className={styles.logo}>
 				<p>
-					<Link href="/">Movie App</Link>
+					<Link href={`/${locale}`}>Movie App</Link>
 				</p>
 			</div>
 			<nav className={styles.navigation}>
 				<ul className={styles.navigation__list}>
 					<li>
-						<Link href="/series">Séries</Link>
+						<Link href={`/${locale}/series`}>Séries</Link>
 					</li>
 					<li>
-						<Link href="/movies">Films</Link>
+						<Link href={`/${locale}/movies`}>Films</Link>
+					</li>
+					<li>
+						<Link href={`/${locale}/signup`}>Inscription</Link>
 					</li>
 				</ul>
 			</nav>
 			<div className={styles.right}>
 				<MovieSearch></MovieSearch>
-				<FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+				<Link href={`/${locale}/user/profile`}>
+					<FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+				</Link>
 				<LanguageSelector></LanguageSelector>
 			</div>
 		</header>

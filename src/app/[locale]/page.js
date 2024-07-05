@@ -1,16 +1,12 @@
+import Genres from "@/components/genres/Genres";
 import Popular from "@/components/popular/Popular";
-import styles from "@/styles/page.module.scss";
-import Genres from "@/components/Genres/Genres";
-
-export const revalidate = 86400;
+import styles from "./page.module.scss";
 
 export default function Home({ params: { locale } }) {
 	return (
-		<>
-			<div className={styles.main}>
-				<Popular locale={locale}></Popular>
-				<Genres locale={locale}></Genres>
-			</div>
-		</>
+		<div className={styles.main}>
+			<Popular locale={locale} />
+			<Genres locale={locale} />
+		</div>
 	);
 }

@@ -11,7 +11,6 @@ export const MovieSearch = () => {
 
 	const updateMovieSearch = async (query) => {
 		const response = await fetch(`/api/movies/search?query=${query}`);
-		console.log(response);
 		const { results } = await response.json();
 		setMovieResults(results.filter((movie) => movie.backdrop_path));
 	};
