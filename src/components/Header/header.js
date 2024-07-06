@@ -21,9 +21,6 @@ const Header = ({ locale }) => {
 					<li>
 						<Link href={`/${locale}/movies`}>Films</Link>
 					</li>
-					<li>
-						<Link href={`/${locale}/signup`}>Inscription</Link>
-					</li>
 				</ul>
 			</nav>
 			<div className={styles.right}>
@@ -31,6 +28,7 @@ const Header = ({ locale }) => {
 				<Link href={`/${locale}/user/profile`}>
 					<FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
 				</Link>
+				<Link href={`/${locale}/signup`}>Inscription</Link>
 				<LanguageSelector></LanguageSelector>
 			</div>
 		</header>
