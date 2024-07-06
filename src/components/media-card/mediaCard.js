@@ -6,7 +6,7 @@ import Like from "./like/Like";
 const MediaCard = ({ media, locale }) => {
 	return (
 		<div className={styles.card}>
-			<Link href={`/${locale}/movies/${media.id}`}>
+			<Link href={`/movies/${media.id}`}>
 				<div className={styles.image}>
 					<Like mediaId={media.id} />
 					<Image

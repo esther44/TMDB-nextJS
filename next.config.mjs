@@ -7,6 +7,9 @@ const __dirname = path.dirname(__filename);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	experimental: {
+		typedRoutes: true,
+	},
 	sassOptions: {
 		includePaths: [path.join(__dirname, "src/styles")],
 	},
